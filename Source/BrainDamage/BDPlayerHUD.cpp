@@ -19,7 +19,7 @@ void UBDPlayerHUD::ToggleInteractionWidget(bool bIsVisible, FText* ObjectName)
 			FFormatNamedArguments Arguments;
 			Arguments.Add(TEXT("ItemName"), *ObjectName);
 
-			InteractionText->SetText(FText::Format(NSLOCTEXT("InteractionText", "InteractionText", "Pick up {ItemName}"), Arguments));
+			InteractionText->SetText(FText::Format(NSLOCTEXT("InteractionText", "InteractionText", "Press [F] to pick up {ItemName}"), Arguments));
 		}
 	}
 }
